@@ -9,9 +9,9 @@ Pawnshop is a cutting-edge mobile app designed to streamline and enhance your pa
 
 1. Apa perbedaan utama antara stateless dan stateful widget dalam konteks pengembangan aplikasi Flutter?
     
-        Stateless widget adalah widget yang tidak memiliki state atau bisa dikatakan statis, artinya widget ini tidak dapat diubah setelah diinisialisasi. Stateless widget hanya memiliki satu method yaitu build(). Stateless widget digunakan untuk membuat widget yang tidak membutuhkan perubahan data.
+    Stateless widget adalah widget yang tidak memiliki state atau bisa dikatakan statis, artinya widget ini tidak dapat diubah setelah diinisialisasi. Stateless widget hanya memiliki satu method yaitu build(). Stateless widget digunakan untuk membuat widget yang tidak membutuhkan perubahan data.
 
-        Stateful widget adalah widget yang memiliki state atau bisa dikatakan dinamis, artinya widget ini dapat diubah setelah diinisialisasi. Stateful widget memiliki dua method yaitu createState() dan build(). Stateful widget digunakan untuk membuat widget yang membutuhkan perubahan data seperti response dari events yang di-trigger.
+    Stateful widget adalah widget yang memiliki state atau bisa dikatakan dinamis, artinya widget ini dapat diubah setelah diinisialisasi. Stateful widget memiliki dua method yaitu createState() dan build(). Stateful widget digunakan untuk membuat widget yang membutuhkan perubahan data seperti response dari events yang di-trigger.
 
 2. Sebutkan seluruh widget yang kamu gunakan untuk menyelesaikan tugas ini dan jelaskan fungsinya masing-masing.
 
