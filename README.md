@@ -170,3 +170,30 @@ Pawnshop is a cutting-edge mobile app designed to streamline and enhance your pa
             }
         }
         ```
+#### BONUS TUGAS 7
+Kamu akan mendapatkan nilai bonus pada penilaian tugas ini apabila kamu mengimplementasikan warna-warna yang berbeda untuk setiap tombol (Lihat Item, Tambah Item, dan Logout).
+
+- Menambahkan attribut baru pada class `ShopItem`:
+    ```
+    final Color color;
+    ```
+
+- Menambahkan kode berikut pada `menu.dart`, untuk memberikan warna yang berbeda pada masing-masing tombol:
+    ```
+    final List<ShopItem> items = [
+        ShopItem("Lihat Item", Icons.checklist, Colors.green),
+        ShopItem("Tambah Item", Icons.add_shopping_cart, Colors.blue),
+        ShopItem("Logout", Icons.logout, Colors.red),
+    ];
+    ```
+
+- Menambahkan kode berikut pada class `ShopCard`, untuk menggunakan warna dari atribut `color` pada class `ShopItem`: 
+    ```
+    @override
+    Widget build(BuildContext context) {
+    return Material(
+      color: item.color,
+      ...
+    )};
+    ```
+
