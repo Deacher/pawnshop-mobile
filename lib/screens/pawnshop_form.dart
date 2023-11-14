@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pawnshop/widgets/global.dart' as global;
 import 'package:pawnshop/widgets/left_drawer.dart';
+import 'package:pawnshop/screens/list_item.dart';
 
 class ShopFormPage extends StatefulWidget {
     const ShopFormPage({super.key});
@@ -7,12 +9,30 @@ class ShopFormPage extends StatefulWidget {
     @override
     State<ShopFormPage> createState() => _ShopFormPageState();
 }
+class Items {
+  late String name;
+  late int amount;
+  late String description;
 
+  Items(
+      {required this.name, required this.amount, required this.description});
+}
 class _ShopFormPageState extends State<ShopFormPage> {
   final _formKey = GlobalKey<FormState>();
   String _name = "";
   int _amount = 0;
   String _description = "";
+
+  onPressed(BuildContext context) {
+    var data =
+      Items(name: _name, amount: _amount, description: _description);
+    global.allItem.add(data);
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => const ListItemPage()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -139,6 +159,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
                               TextButton(
                                 child: const Text('OK'),
                                 onPressed: () {
+                                  onPressed(context);
                                   Navigator.pop(context);
                                 },
                               ),

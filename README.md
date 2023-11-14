@@ -440,3 +440,6 @@ Kamu akan mendapatkan nilai bonus pada penilaian tugas ini apabila kamu mengimpl
                 },
             ),
         ```
+
+#### BONUS TUGAS 8
+Membuat class `Items` pada `pawnshop_form.dart` untuk menginisiasi objek buku saat menekan tombol save (apabila valid). lalu buat `global.dart` untuk menyimpan semua variabel global, ini untuk menyimpan list buku yang telah dibuat. Kemudian buat tampilan baru yaitu `list_item.dart` untuk menampilkan list buku yang telah dibuat. Tambahkan ListTile baru di dalam drawer dan lakukan routing untuk menuju page `list_item.dart`, dan juga di `menu.dart` untuk menuju page `list_item.dart`. 

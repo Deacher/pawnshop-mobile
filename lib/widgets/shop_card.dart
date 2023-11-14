@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pawnshop/screens/pawnshop_form.dart';
+import 'package:pawnshop/screens/list_item.dart';
 
 class ShopItem {
   final String name;
@@ -31,6 +32,12 @@ class ShopCard extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => ShopFormPage(),
+                ));
+          }else if (item.name == "Lihat Item"){
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ListItemPage(),
                 ));
           }
         },

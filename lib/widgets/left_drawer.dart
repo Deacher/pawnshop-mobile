@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pawnshop/screens/list_item.dart';
 import 'package:pawnshop/screens/menu.dart';
 import 'package:pawnshop/screens/pawnshop_form.dart';
 
@@ -65,6 +66,22 @@ class LeftDrawer extends StatelessWidget {
                 context, 
                 MaterialPageRoute(
                   builder: (context) => ShopFormPage(),
+                ));
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.checklist),
+            title: const Text('Lihat Item'),
+            // Bagian redirection ke ShopFormPage
+            onTap: () {
+              /*
+              TODO: Buatlah routing ke ShopFormPage di sini,
+              setelah halaman ShopFormPage sudah dibuat.
+              */
+              Navigator.pushReplacement(
+                context, 
+                MaterialPageRoute(
+                  builder: (context) => ListItemPage(),
                 ));
             },
           ),
